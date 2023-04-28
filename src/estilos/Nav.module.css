@@ -1,0 +1,145 @@
+.nav {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.384);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction:row;
+ 
+}
+
+.logo {
+  height: 110px;
+  display: flex;
+}
+
+.aboutButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.384);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+.aboutButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.aboutButton span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.aboutButton:hover span {
+  padding-right: 15px;
+}
+
+.aboutButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.homeButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.384);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-right: 0px;
+}
+
+.homeButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.homeButton span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.homeButton:hover span {
+  padding-right: 15px;
+}
+
+.homeButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Log Out */
+/* .handleLogOut {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.384);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-right: 0px;
+}
+
+.handleLogOut span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.handleLogOut span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.handleLogOut:hover span {
+  padding-right: 15px;
+}
+
+.handleLogOut:hover span:after {
+  opacity: 1;
+  right: 0;
+} */
+
+.handleLogOut{
+  background: url("https://icon-library.com/2916478.html");
+  height: 100px;
+  width: 100px;
+ /*  background-size: 20px; */
+  background-repeat: no-repeat;
+}

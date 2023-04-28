@@ -1,0 +1,29 @@
+.formulario{
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 300px;
+    height: 400px;
+    margin-left: 40%;
+    border-radius: 12px;
+}
+
+.props{
+    margin-left: 60px;
+    margin-top: 20px;
+    padding-top: 150px;
+    color: aliceblue;
+    
+   
+}
+.props input{
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+.props label{
+    padding-top: 40px;
+}
+
+.formulario button{
+    margin-left: 120px;
+    margin-top: 10px;
+}
