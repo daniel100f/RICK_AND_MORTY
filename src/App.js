@@ -61,6 +61,7 @@ useEffect(()=>{
         <Route path="/about" element={<About />} />
         <Route path="/detail/:detailId" element={<Detail />} />
         <Route path="/favorites" element={<Favorites onClose={onClose}/>} />
+        <Route path="/favorites" element={<Favorites onClose={onClose}/>} />
         
       </Routes>
       

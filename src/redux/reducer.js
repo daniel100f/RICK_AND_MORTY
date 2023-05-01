@@ -19,7 +19,7 @@ switch(type){
             return{...state,
             myFavorites:state.myFavorites.filter(fav=>fav.id!==payload)
         }
-        /* case FILTER:
+         case FILTER:
             const allCharactersFiltrados=state.allCharacters.filter(character=>
                 character.gender === payload)
         return {...state,
@@ -27,9 +27,9 @@ switch(type){
             payload=== "allCharacters"
             ?[...state.allCharacters]
             :allCharactersFiltrados
-        } */
+        } 
 
-        case FILTER:
+       /*  case FILTER:
   let filteredArray;
   if (payload === "allCharacters") {
     filteredArray = [...state.allCharacters];
@@ -41,8 +41,8 @@ switch(type){
   return {
     ...state,
     allCharacters: filteredArray,
-    myFavorites: filteredArray
-  };
+    myFavorites: filteredArray */
+  /* }; */
 
 
 

@@ -17,7 +17,8 @@ const Favorites=({myFavorites})=>{
     }
     
 return(
-    <div className={style.container}>
+    <div >
+        <div className={style.orden}>
         <select onChange={handleOrder}>
         <option value="A">Ascendente</option>
         <option value="D">Descendente</option>
@@ -29,24 +30,28 @@ return(
         <option value="unknown">unknown</option>
         <option value="AllCharacters">AllCharacters</option>
         </select>
-      
-        { 
-    myFavorites?.map(fav=>{
+        </div>
+        
+        <div className={style.container}>
+        {  myFavorites?.map(fav=>{
             return(
                 <Card
                     key={fav.id}
                     id={fav.id}
-                    name="daniel"
+                    name={fav.name}
                     species={fav.species}
                     status={fav.status}
                     image={fav.image}
                     
 
                 />
-            )
-        })
+            )})
     }
     </div>
+    
+    
+    </div>
+    
 )
 
 }
@@ -62,20 +67,3 @@ export default connect(
   
 )(Favorites)
 
-
- /*  { 
-    myfavorites?.map(fav=>{
-            return(
-                <Card
-                    key={fav.id}
-                    id={fav.id}
-                    name={fav.name}
-                    species={fav.species}
-                    status={fav.status}
-                    image={fav.image}
-                    onClose={fav.onClose}
-
-                />
-            )
-        })
-    } */

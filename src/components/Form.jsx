@@ -32,11 +32,11 @@ const Form = ({login})=>{
 return (
     
     <form onSubmit={handleSubmit} className={style.formulario}>
-    {/*  <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1200px-Rick_and_Morty.svg.png"
+     <img
+          src="https://i.pinimg.com/564x/bf/c8/aa/bfc8aa260765a6833899791d3ee1d416.jpg"
           alt="Logo"
           className={style.logo}
-        /> */}
+            height="400px" width="300px"          /> 
         
         <div className={style.props}>
             
@@ -49,11 +49,13 @@ return (
 
     <label htmlFor="password">Password:</label><br />
 
-    <input type="text" placeholder="santafe1234" name="password" value={userData.password}onChange={handleChange}/>
+    <input type="password" placeholder="santafe10" name="password" value={userData.password}onChange={handleChange}/>
     {errors.password && <p>{errors.password}</p>}
     <br />
-    </div>
     <button >Submit</button>
+    </div>
+    
+   
     
     </form>
 );

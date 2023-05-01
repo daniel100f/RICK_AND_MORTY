@@ -1,32 +1,36 @@
 .searchBar {
   display: flex;
   justify-content: flex-end;
-  margin: 30px;
+   margin: 30px; 
+  
   align-items: center;
 }
 .input {
-  min-height: 50px;
-  max-width: 150px;
+  min-height: 40px;
+  max-width: 170px;
   padding: 0 1rem;
   color: black;
   font-size: 15px;
   border: 1px solid black;
-  border-radius: 6px 0 0 6px;
+  border-radius: 12px;
   background-color: rgba(245, 245, 245, 0.337);
+  margin-right: 4px;
 }
 
 .button {
-  min-height: 50px;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 0 6px 6px 0;
-  background-color: rgba(0, 0, 0, 0.51);
-  color: #fff;
-  font-size: 15px;
+  
+  background-color: greenyellow;
+  color: rgba(38, 61, 194, 0.904);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  border-radius: 12px;
+  font-size: 18px;
+  padding-right: 8px;
+  
 }
 
 .button:hover {
   background-color: #5e5dcd;
+  color: greenyellow;
 }

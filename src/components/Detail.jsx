@@ -23,13 +23,16 @@ function Detail() {
     return setCharacter({});
   }, [detailId]);
 
-  return (
-    <div className={style.contenedor}>
+   return (
+      <div className={style.contenedor}>
       <div className={style.caracteristicas}>
+
       <h1>Name: {character.name}</h1>
       <p>Status: {character.status}</p>
       <p>Specie: {character.species}</p>
       <p>Gender: {character.gender}</p>
+     
+      
 
       </div>
       

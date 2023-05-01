@@ -4,7 +4,19 @@ import style from "../estilos/About.module.css";
 function About() {
   return (
     <div className={style.container}>
-      <h1>Hello i am Daniel </h1>
+      
+      <div className={style.caracteristicas}>
+
+<h1>Name: Daniel Villarraga. </h1>
+<p>Origin: Colombia-Cundinamarca-Chía</p>
+<p>Specie: Human </p>
+<p>Gender: Man</p>
+<p>State:  Henry Student</p>
+
+</div>
+<div><img src="" alt="img" /></div>
+
+
     </div>
   );
 }

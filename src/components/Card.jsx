@@ -17,7 +17,7 @@ const handleFavorite=()=>{
   }else{
     setIsFav(true);
     
-    addFav({id,name,status,species,gender,image})
+    addFav({id,name,status,species,gender,image,onClose})
   }
 }
 
@@ -32,24 +32,16 @@ useEffect(() => {
   return (
     <div className={style.container}>
       
-   
-      <button className={style.favoritos} onClick={handleFavorite}>{isFav?"❤️" : "🤍"}</button>
-   
- 
-      <button onClick={() => onClose(id)} className={style.closeButton}>
-        X
-      </button>
-      
+    <div className="botones">
+      <span className={style.favoritos} onClick={handleFavorite}>{isFav?"❤️" : "🤍"}</span>
+   <button onClick={() => onClose(id)} className={style.closeButton}>X</button>
+   </div>
       <div className={style.info}>
         <NavLink to={`/detail/${id}` }>
           
         <img src={image} alt={name} className={style.photo} />
           <h2>Name: {name}</h2>
-        
-        <h2>Status: {status}</h2>
-        <h2>Species: {species}</h2>
-        <h2>Gender: {gender}</h2>
-        </NavLink>
+         </NavLink>
       </div>
     </div>
   );
