@@ -16,6 +16,7 @@ const Favorites=({myFavorites})=>{
         dispatch(filterCards(event.target.value))
     }
     
+    
 return(
     <div >
         <div className={style.orden}>

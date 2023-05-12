@@ -5,6 +5,7 @@ import {addFav,removeFav} from "../redux/action"
 import {connect } from "react-redux"
 import React,{ useState ,useEffect } from "react";
 
+
  function Card({id,name,status,species,gender,image,onClose,addFav,removeFav,myFavorites}){
 
   /* const {id,name,status,species,gender,image,onClose,addFav,removeFav,myFavorites}=props */
@@ -44,6 +45,8 @@ useEffect(() => {
           <h2>Name: {name}</h2>
          </NavLink>
       </div>
+    
+
     </div>
   );
 }

@@ -22,15 +22,23 @@ function App() {
 
   const password = 'santafe10';  */
 
-/* const login=(userData)=>{
-  if(userData.email===email && userData.password===password){
-    setAccess(true);
-    navigate("/home");
 
+
+async function login(userData) {
+  const { email, password } = userData;
+  const URL = 'http://localhost:3001/rickandmorty/login/';
+  try {
+    const { data } = await axios(URL + `?email=${email}&password=${password}`);
+    const { access } = data;
+    setAccess(access);
+    access && navigate('/home');
+  } catch (error) {
+    console.error(error);
   }
-} */
+}
 
-function login(userData) {
+
+/* function login(userData) {
   const { email, password } = userData;
   const URL = 'http://localhost:3001/rickandmorty/login/';
   axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
@@ -38,14 +46,31 @@ function login(userData) {
      setAccess(access);
      access && navigate('/home');
   });
-}
+} */
 useEffect(()=>{
    !access&&navigate("/") 
 }, [access, navigate])
 
 
-  
-  function onSearch(id) {
+  async function onSearch(id) {
+  try {
+    const { data } = await axios(`http://localhost:3001/rickandmorty/character/${id}`);
+    if (data.name) {
+      const idExists = characters.some((char) => char.id === data.id);
+      if (idExists) {
+        window.alert("¡Este personaje ya ha sido agregado!");
+      } else {
+        setCharacters((oldChars) => [...oldChars, data]);
+      }
+    } else {
+      /*  window.alert("¡No hay personajes con este ID!");  */ 
+    } 
+  } catch (error) {
+    window.alert("Error: ¡No hay personajes con este ID! o ¡Este personaje ya ha sido agregado!");
+  }
+}
+
+  /* function onSearch(id) {
     axios(`http://localhost:3001/rickandmorty/character/${id}`)
       .then(({ data }) => {
         if (data.name) {
@@ -58,12 +83,12 @@ useEffect(()=>{
           }
          } else {
             /*  window.alert("¡No hay personajes con este ID!");  */ 
-        } 
+       /*  } 
       })
        .catch((error) => {
         window.alert("Error: ¡No hay personajes con este ID! o ¡Este personaje ya ha sido agregado!");
       }); 
-  }
+  } */ 
   
   
   function onClose(id) {
