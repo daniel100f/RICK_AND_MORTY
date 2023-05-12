@@ -1,0 +1,103 @@
+.nav {
+  margin: 0 auto;
+   
+   background-color: rgba(0, 0, 0, 0.651);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction:row;
+  height: 75px;
+ 
+}
+
+.logo {
+  height: 70px;
+  display: flex;
+}
+
+.aboutButton{
+  cursor: pointer;
+  display: inline-block;
+  color: greenyellow;
+  font-size: 20px;
+  /* background-color: rgba(0, 0, 0, 0.384); */
+  padding: 10px;
+  border-radius: 12px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.aboutButton:hover {
+  
+  background-color: greenyellow;
+  color: rgba(38, 61, 194, 0.904);
+  
+  transition: 0.5s;
+}
+
+
+
+
+.homeButton{
+  cursor: pointer;
+  display: inline-block;
+  color: greenyellow;
+  font-size: 20px;
+  /* background-color: rgba(0, 0, 0, 0.384); */
+  padding: 10px;
+  border-radius: 12px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.homeButton:hover {
+  
+  background-color: greenyellow;
+  color: rgba(38, 61, 194, 0.904);
+  
+  transition: 0.5s;
+}
+
+
+
+.favorites{
+  cursor: pointer;
+  display: inline-block;
+  color: greenyellow;
+  font-size: 20px;
+  /* background-color: rgba(0, 0, 0, 0.384); */
+  padding: 10px;
+  border-radius: 12px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.favorites:hover{
+  background-color: greenyellow;
+  color: rgba(38, 61, 194, 0.904);
+  
+  transition: 0.5s;
+}
+
+
+.handleLogOut {
+  
+  background-color: greenyellow;
+  color: rgba(38, 61, 194, 0.904);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 18px;
+  padding-right: 8px;
+  
+}
+
+.handleLogOut:hover {
+  background-color: #5e5dcd;
+  color: greenyellow;
+}
+
+
+

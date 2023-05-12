@@ -1,0 +1,39 @@
+.container{
+   margin-top: 90px;
+  margin-left: 400px;
+  display: flex;
+}
+.image{
+  border-radius: 12px;
+}
+.image:hover{
+  width: 400px;
+}
+
+.caracteristicas{
+  margin-right: 100px;
+  
+  background-color: rgba(0, 0, 0, 0.651);
+  width: 300px;
+  height: 400px;
+  border-radius: 12px;
+  text-align: center;
+  color: greenyellow;
+
+}
+.caracteristicas:hover{
+  margin-right: 100px;
+  background-color: rgba(0, 0, 0, 0.445);
+  width: 400px;
+  height: 400px;
+  border-radius: 12px;
+  padding-top: 60px;
+}
+.caracteristicas p{
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.caracteristicas h1{
+  margin-top: 50px;
+  font-family:'Times New Roman', Times, serif ;
+}

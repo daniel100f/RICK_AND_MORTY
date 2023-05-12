@@ -1,0 +1,55 @@
+.formulario{
+    background-color: rgba(19, 19, 31, 0.74);
+    width: 600px;
+    height: 400px;
+    margin-left: 30%;
+    border-radius: 12px;
+    display: flex;
+    margin-top: 140px;
+}
+.logo{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+
+.props{
+margin-left: 50px;
+margin-top: 68px;
+}
+.props label{
+    color: greenyellow;
+    font-size: 20px;
+}
+.props input{
+    /* padding-left: 20px; */
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+    color: rgb(76, 105, 32);
+}
+.props  p{
+    color: greenyellow;
+    margin: 0;
+    font-size: 15px;
+}
+
+.props button{
+    margin-left: 50px;
+    margin-top: 12px;
+    background-color: greenyellow;
+    color: rgba(38, 61, 194, 0.904);
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.props button:hover{
+    background-color: #5e5dcd;
+  color: greenyellow;
+}
